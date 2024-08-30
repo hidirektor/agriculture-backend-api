@@ -1,6 +1,7 @@
 module.exports = {
-  SYSOP: 'SYSOP',
-  ENGINEER: 'ENGINEER',
-  TECHNICIAN: 'TECHNICIAN',
-  NORMAL: 'NORMAL'
+  SYSOP: 'SysOp',
+  USER: 'User',
+  MERCHANT: 'Merchant',
+  AGRICULTURAL_ENGINEER: 'Agricultural Engineer',
+  PARTNERSHIP: 'Partner Ship',
 };
