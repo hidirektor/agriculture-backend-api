@@ -1,0 +1,39 @@
+POST {{baseUrl}}/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email":"can@gmail.com",
+    "password":"12345"
+}
+
+###
+GET {{baseUrl}}/token-decode HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+###
+
+POST {{baseUrl}}/sign-up HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName":"Kadir Can",
+    "lastName":"Karademir",
+    "email":"cancanx@gmail.com",
+    "phoneNumber":"05385834642",
+    "password":"12345"
+}
+
+###
+
+PUT {{baseUrl}}/profile-update HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "firstName": "Kadir Can",
+    "lastName": "Karademir",
+    "email": "can@gmail.com",
+    "phoneNumber":"05385834642",
+    "password":"12345"
+}
